@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824101042.png">
 <meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824100941.png">
 <meta property="article:published_time" content="2020-08-23T03:02:21.000Z">
-<meta property="article:modified_time" content="2020-08-24T02:47:47.050Z">
+<meta property="article:modified_time" content="2020-09-03T02:30:30.206Z">
 <meta property="article:author" content="司家乐">
 <meta property="article:tag" content="css">
 <meta property="article:tag" content="替换元素">
@@ -199,12 +199,12 @@
 <li>CSS尺寸</li>
 </ul>
 <p>接下来，将针对每种尺寸分别进行说明。</p>
-<h2 id="固有尺寸"><a href="#固有尺寸" class="headerlink" title="固有尺寸"></a>固有尺寸</h2><p>即替换元素本身的尺寸，例如，一张图片，它的尺寸是<code>900*383px</code>，这个就是它的固有尺寸</p>
+<h2 id="1-固有尺寸"><a href="#1-固有尺寸" class="headerlink" title="1 固有尺寸"></a>1 固有尺寸</h2><p>即替换元素本身的尺寸，例如，一张图片，它的尺寸是<code>900*383px</code>，这个就是它的固有尺寸</p>
 <p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824094741.png" alt="image-20200824094740662"></p>
 <p>来看一下它在浏览器中的尺寸</p>
 <p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824094845.png" alt="image-20200824094845697"></p>
 <p>当一个替换元素单独存在，没有设置任何尺寸时，它就会保持它原有的尺寸</p>
-<h2 id="HTML尺寸"><a href="#HTML尺寸" class="headerlink" title="HTML尺寸"></a>HTML尺寸</h2><p>所谡HTML尺寸，就是在HTML标签中指定替换元素的大小，例如：</p>
+<h2 id="2-HTML尺寸"><a href="#2-HTML尺寸" class="headerlink" title="2 HTML尺寸"></a>2 HTML尺寸</h2><p>所谡HTML尺寸，就是在HTML标签中指定替换元素的大小，例如：</p>
 <p>在<code>&lt;img&gt;</code>标签中设置了<code>width = 450px</code></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">width</span>=<span class="string">"450px"</span> <span class="attr">src</span>=<span class="string">"https://pic3.zhimg.com/v2-4406b098b2858045fd7c7864f5f8f4d5_1440w.jpg?source=172ae18b"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -225,7 +225,7 @@
 <p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824100412.png" alt="image-20200824100412480"></p>
 <p>图片就变成了下面的这种效果</p>
 <p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200824100338.png" alt="image-20200824100338581"></p>
-<h2 id="CSS尺寸"><a href="#CSS尺寸" class="headerlink" title="CSS尺寸"></a>CSS尺寸</h2><p>CSS尺寸就是指通过CSS样式设置的尺寸。当你设置了CSS样式后，替换元素的尺寸将会覆盖掉HTML尺寸（当然，也会覆盖掉固有尺寸）</p>
+<h2 id="3-CSS尺寸"><a href="#3-CSS尺寸" class="headerlink" title="3 CSS尺寸"></a>3 CSS尺寸</h2><p>CSS尺寸就是指通过CSS样式设置的尺寸。当你设置了CSS样式后，替换元素的尺寸将会覆盖掉HTML尺寸（当然，也会覆盖掉固有尺寸）</p>
 <p>例如：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="comment">/* css样式设置的尺寸覆盖掉HTML尺寸 */</span></span></span><br><span class="line">        img &#123;</span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 100px;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">height</span>=<span class="string">"150px"</span> <span class="attr">width</span>=<span class="string">'500px'</span></span></span><br><span class="line"><span class="tag">        <span class="attr">src</span>=<span class="string">"https://pic3.zhimg.com/v2-4406b098b2858045fd7c7864f5f8f4d5_1440w.jpg?source=172ae18b"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -389,7 +389,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#固有尺寸"><span class="toc-number">1.</span> <span class="toc-text">固有尺寸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML尺寸"><span class="toc-number">2.</span> <span class="toc-text">HTML尺寸</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#只设置宽度或高度"><span class="toc-number">2.1.</span> <span class="toc-text">只设置宽度或高度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同时设置宽度和高度"><span class="toc-number">2.2.</span> <span class="toc-text">同时设置宽度和高度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS尺寸"><span class="toc-number">3.</span> <span class="toc-text">CSS尺寸</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-固有尺寸"><span class="toc-number">1.</span> <span class="toc-text">1 固有尺寸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-HTML尺寸"><span class="toc-number">2.</span> <span class="toc-text">2 HTML尺寸</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#只设置宽度或高度"><span class="toc-number">2.1.</span> <span class="toc-text">只设置宽度或高度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同时设置宽度和高度"><span class="toc-number">2.2.</span> <span class="toc-text">同时设置宽度和高度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-CSS尺寸"><span class="toc-number">3.</span> <span class="toc-text">3 CSS尺寸</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -604,6 +604,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">float</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">-css</a>
               </li>
             
             <div class="clearfix"></div>
