@@ -6,27 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://coderleishuo.github.io">
-  <title>margin合并 | CoderLeiShuo&#39;s Blog</title>
+  <title>02-Python列表添加元素 | CoderLeiShuo&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="article">
-<meta property="og:title" content="margin合并">
-<meta property="og:url" content="https://coderleishuo.github.io/lele/41197.html">
+<meta property="og:title" content="02-Python列表添加元素">
+<meta property="og:url" content="https://coderleishuo.github.io/lele/65251.html">
 <meta property="og:site_name" content="CoderLeiShuo&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200826161831.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827115213.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827115742.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827121658.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827122728.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827123812.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827123706.png">
-<meta property="og:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827125352.png">
-<meta property="article:published_time" content="2020-08-27T03:45:04.000Z">
-<meta property="article:modified_time" content="2021-10-05T10:00:02.000Z">
+<meta property="og:image" content="c:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221224142708252.png">
+<meta property="og:image" content="c:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221201210229424.png">
+<meta property="og:image" content="c:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221201210108039.png">
+<meta property="article:published_time" content="2022-12-24T06:24:56.000Z">
+<meta property="article:modified_time" content="2022-12-24T06:27:14.045Z">
 <meta property="article:author" content="CoderLeiShuo">
-<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200826161831.png">
+<meta name="twitter:image" content="c:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221224142708252.png">
   
     <link rel="alternative" href="/atom.xml" title="CoderLeiShuo&#39;s Blog" type="application/atom+xml">
   
@@ -199,14 +194,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-margin合并" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-02-Python列表添加元素" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      margin合并
+      02-Python列表添加元素
     </h1>
   
 
@@ -222,14 +217,14 @@
 		
 		<!--显示阅读次数完毕-->
         
-        <a href="/lele/41197.html" class="archive-article-date">
-  	<time datetime="2020-08-27T03:45:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-27</time>
+        <a href="/lele/65251.html" class="archive-article-date">
+  	<time datetime="2022-12-24T06:24:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-24</time>
 </a>
         
 		
     <!-- 字数 -->
         <div align="center" class="post-count">
-          字数：1.3k字 | 预计阅读时长：5分钟
+          字数：1.8k字 | 预计阅读时长：7分钟
         </div>
     <!-- 字数完毕 --> 
         
@@ -237,52 +232,103 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200826161831.png" alt="CSS 插圖"></p>
+        <p><img src="C:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221224142708252.png" alt="image-20221224142708252"></p>
 <a id="more"></a>
 
-<h2 id="1-从一个标题开始说起"><a href="#1-从一个标题开始说起" class="headerlink" title="1 从一个标题开始说起"></a>1 从一个标题开始说起</h2><p>某一天，我想定义一个<code>div</code>元素，于是有了下面的代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        body &#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">        <span class="selector-class">.container</span> &#123;</span></span><br><span class="line">            margin: 0 auto;</span><br><span class="line">            height: 100px;</span><br><span class="line">            width: 400px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#c56cf0</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="连接列表"><a href="#连接列表" class="headerlink" title="+ 连接列表"></a>+ 连接列表</h2><p>使用<code>+</code>运算符可以将多个序列连接起来；列表是序列的一种，所以也可以使用<code>+</code>进行连接，这样就相当于在第一个列表的末尾添加了另一个列表</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">names1 = [<span class="string">"乐乐"</span>, <span class="string">"烁烁"</span>]</span><br><span class="line">names2 = [<span class="string">"小乐"</span>, <span class="string">"小烁"</span>]</span><br><span class="line">print(names1 + names2)</span><br></pre></td></tr></table></figure>
 
-<p>当我打开浏览器，看到了如下的页面效果：</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827115213.png" alt="image-20200827115211304"></p>
-<p>后来，我想着，只有一个<code>div</code>有些光秃秃的，于是我就想向里面添加一些内容。于是，我向当中添加了一个<code>h2</code>标题</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">        CSS世界</span><br><span class="line">    <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'乐乐'</span>, <span class="string">'烁烁'</span>, <span class="string">'小乐'</span>, <span class="string">'小烁'</span>]</span><br></pre></td></tr></table></figure>
 
-<p>并指定了一些基本的样式：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>从运行结果可以发现，使用<code>+</code>会生成一个新的列表，原有的列表不会被改变。</p>
+<p><code>+</code>更多的是用来拼接列表，而且执行效率并不高，如果想在列表中插入元素，应该使用下面几个专门的方法。</p>
+<h2 id="append-方法添加元素"><a href="#append-方法添加元素" class="headerlink" title="append()方法添加元素"></a>append()方法添加元素</h2><p><code>append()</code> 方法用于在列表的末尾追加元素，该方法的语法格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listname.append(obj)</span><br></pre></td></tr></table></figure>
 
-<p>我满心欢喜地去查看页面的效果，结果却发现：</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827115742.png" alt="image-20200827115742499"></p>
-<p>不得了！不得了！我的<code>div</code>竟然掉了下来！</p>
-<p>当我把<code>h2</code>标题删除，换成了一个<code>&lt;span&gt;</code>元素。<strong>页面效果如下：</strong></p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827121658.png" alt="image-20200827121657962"></p>
-<p>可以看到，添加的<code>span</code>元素并没有使得父元素<code>div</code>掉下来。那为什么我添加了一个<code>h2</code>标题，<code>div</code>就掉了下来呢？</p>
-<p>这就是从<code>margin</code>合并开始说起了。</p>
-<h2 id="2-什么是margin合并"><a href="#2-什么是margin合并" class="headerlink" title="2 什么是margin合并"></a>2 什么是<code>margin</code>合并</h2><p><code>margin</code>合并就是块级元素（<code>float</code>、<code>absolute</code>、<code>inline-block</code>除外）的上外边距和下外边距会合并为单个外边距，这样的现象称为<code>margin</code>合并。</p>
-<p><code>margin</code>合并只会发生在垂直方向上(不考虑writing-mode)。</p>
-<p><code>margin</code>合并有三种情况，将下来将逐一进行介绍。</p>
-<h2 id="3-相邻兄弟元素的margin合并"><a href="#3-相邻兄弟元素的margin合并" class="headerlink" title="3 相邻兄弟元素的margin合并"></a>3 相邻兄弟元素的<code>margin</code>合并</h2><p>第一种情况是相邻兄弟元素之间的合并，这是非常常见的，例如：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>相邻兄弟元素之间margin合并<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="comment">/* 外边距10px,但垂直方向上的外边距合并了 */</span></span></span><br><span class="line">            margin: 10px;</span><br><span class="line">            width: 100px;</span><br><span class="line"><span class="css">            <span class="comment">/* 行高百分比相对于字体大小 */</span></span></span><br><span class="line">            line-height: 100px;</span><br><span class="line"><span class="css">            <span class="comment">/* 字体大小百分比相对于父元素 */</span></span></span><br><span class="line">            font-size: 30px;</span><br><span class="line">            text-align: center;</span><br><span class="line">            background-color: skyblue;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其中，<code>listname</code> 表示要添加元素的列表；<code>obj</code> 表示到添加到列表末尾的数据，它可以是单个元素，也可以是列表、元组等。</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">names = [<span class="string">"乐乐"</span>, <span class="string">"烁烁"</span>]</span><br><span class="line"><span class="comment"># 追加元素</span></span><br><span class="line">names.append(<span class="string">"CoderLeiShuo"</span>)</span><br><span class="line">print(names)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 追加列表，整个列表将会当成一个元素</span></span><br><span class="line">names.append([<span class="string">"小乐"</span>, <span class="string">"小烁"</span>])</span><br></pre></td></tr></table></figure>
 
-<p>在上述代码中，为两个<code>div</code>元素设置了<code>10px</code>的外边距，查看页面效果：</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827122728.png" alt="image-20200827122728637"></p>
-<p>可以看到，第1个元素和第二个元素垂直方向上的外边距和水平方向上的外边距一样，只有<code>10px</code>的距离。这是因为第1个元素的下外边距和第2个元素的上外边距发生了合并，<strong>根据一定的规则</strong>，合并成了一个外边距。</p>
-<h2 id="4-父元素和首尾子元素的margin合并"><a href="#4-父元素和首尾子元素的margin合并" class="headerlink" title="4 父元素和首尾子元素的margin合并"></a>4 父元素和首尾子元素的<code>margin</code>合并</h2><p>第二种情况就是父元素和首尾子元素之间的<code>margin</code>合并。还记得一开始的问题吗？当给父元素<code>div</code>中添加了一个<code>h2</code>时，父元素<code>div</code>竟然掉了下来。这是因为父元素<code>div</code>和<code>h2</code>发生了<code>margin</code>合并。</p>
-<p>父元素中的第一个子元素或最后一个子元素的<code>margin</code>值会和父元素发生合并，会将合并的<code>margin</code>作用到父元素上。</p>
-<h3 id="4-1-父元素和第一个子元素的合并"><a href="#4-1-父元素和第一个子元素的合并" class="headerlink" title="4.1 父元素和第一个子元素的合并"></a>4.1 父元素和第一个子元素的合并</h3><p>注意一下开篇例子的DOM结构：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">        CSS世界</span><br><span class="line">    <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">"乐乐"</span>, <span class="string">"烁烁"</span>, <span class="string">"CoderLeiShuo"</span>]</span><br><span class="line"></span><br><span class="line">[<span class="string">"乐乐"</span>, <span class="string">"烁烁"</span>, [<span class="string">"小乐"</span>, <span class="string">"小烁"</span>]]</span><br></pre></td></tr></table></figure>
 
-<p>由于<code>h2</code>是父元素<code>div</code>的第一个子元素，因此<code>h2</code>的<code>margin</code>值和父元素合并了，<strong>等同于</strong>作用到了父元素<code>div</code>上面，因此才造成了父元素的下移。</p>
-<p>如下图所示：</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827123812.png" alt="image-20200827123812155"></p>
-<p>我没有设置<code>h2</code>的<code>margin</code>，哪里来的<code>margin</code>呢？这是浏览器的默认样式。</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827123706.png" alt="image-20200827123706407"></p>
-<h3 id="4-2-父元素和最后一个子元素的合并"><a href="#4-2-父元素和最后一个子元素的合并" class="headerlink" title="4.2 父元素和最后一个子元素的合并"></a>4.2 父元素和最后一个子元素的合并</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">        body &#123;</span><br><span class="line">            margin: 0;</span><br><span class="line">            padding: 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        h2 &#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line">            font-size: 50px;</span><br><span class="line">            line-height: 100px;</span><br><span class="line">            text-align: center;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        span &#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line">            font-size: 50px;</span><br><span class="line">            line-height: 100px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        p &#123;</span><br><span class="line"><span class="css">            <span class="selector-tag">color</span>: <span class="selector-id">#fff</span>;</span></span><br><span class="line">            font-size: 25px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"><span class="css">        <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="css">            <span class="comment">/* 垂直方向上的外边距为0px */</span></span></span><br><span class="line">            margin: 0px auto;</span><br><span class="line">            width: 400px;</span><br><span class="line"><span class="css">            <span class="selector-tag">background-color</span>: <span class="selector-id">#c56cf0</span>;</span></span><br><span class="line">            text-align: center;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>CSS世界<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是一个段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>我是span元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>可以看到，当给 append() 方法传递列表或者元组时，此方法会将它们视为一个整体，作为一个元素添加到列表中，从而形成包含列表和元组的新列表。</p>
+<p>如果我们希望把列表的每一个元素分别添加到列表中，则可以使用<code>extend()</code>方法</p>
+<h2 id="extend-方法添加元素"><a href="#extend-方法添加元素" class="headerlink" title="extend()方法添加元素"></a>extend()方法添加元素</h2><p>extend() 和 append() 的不同之处在于：extend() 不会把列表或者元组视为一个整体，而是把它们包含的元素逐个添加到列表中。</p>
+<p>extend() 方法的语法格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listname.extend(obj)</span><br></pre></td></tr></table></figure>
 
-<p>在上述代码中定义了两个<code>div</code>，并且设置了它们垂直方向的外边距为<code>0px</code>。正常情况下，这两个<code>div</code>应该是紧挨着，但是查看页面效果，却不是这样的。</p>
-<p><img src="https://picgo-ali.oss-cn-beijing.aliyuncs.com/img/20200827125352.png" alt="image-20200827125352434"></p>
-<p>原因在于<code>p</code>元素是第一个父元素<code>div</code>的最后一个子元素，它的外边距和父元素的外边距发生了合并，<strong>等同于</strong>作用到了父元素<code>div</code>上，因此，第一个<code>div</code>才会和第二个<code>div</code>产生了距离。</p>
-<h3 id="4-3-取消合并"><a href="#4-3-取消合并" class="headerlink" title="4.3 取消合并"></a>4.3 取消合并</h3><h2 id="5-空白块级元素的margin合并"><a href="#5-空白块级元素的margin合并" class="headerlink" title="5 空白块级元素的margin合并"></a>5 空白块级元素的<code>margin</code>合并</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>其中，<code>listname</code> 指的是要添加元素的列表；<code>obj</code> 表示到添加到列表末尾的数据，它可以是单个元素，也可以是列表、元组等，<strong>但不能是单个的数字</strong>。</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">localMovies = [<span class="string">"霸王别姬"</span>, <span class="string">"忠犬八公"</span>, <span class="string">"奇异博士"</span>]</span><br><span class="line">onlineMovies = [<span class="string">"千与千寻"</span>, <span class="string">"闻香识女人"</span>, <span class="string">"红海行动"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在本地电影列表中追加在线电影列表</span></span><br><span class="line">localMovies.extend(onlineMovies) </span><br><span class="line">print(localMovies)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#39;霸王别姬&#39;, &#39;忠犬八公&#39;, &#39;奇异博士&#39;, &#39;千与千寻&#39;, &#39;闻香识女人&#39;, &#39;红海行动&#39;]</span><br></pre></td></tr></table></figure>
+
+<p>尤其要注意，extend()方法不能用于添加单个数字</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numList = [<span class="number">9</span>, <span class="number">5</span>, <span class="number">2</span>]</span><br><span class="line">numList.extend(<span class="number">7</span>)</span><br><span class="line">print(numList)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TypeError: <span class="string">'int'</span> object <span class="keyword">is</span> <span class="keyword">not</span> iterable</span><br></pre></td></tr></table></figure>
+
+
+
+<p>使用列表的方法时还容易犯以下这个错误。请看如下代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">localMovies = [<span class="string">"霸王别姬"</span>, <span class="string">"忠犬八公"</span>, <span class="string">"奇异博士"</span>]</span><br><span class="line">onlineMovies = [<span class="string">"千与千寻"</span>, <span class="string">"闻香识女人"</span>, <span class="string">"红海行动"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列表调用extend()方法之后，误以为返回了一个新列表，希望将新列表赋值给变量</span></span><br><span class="line"><span class="comment"># 实则列表新增元素后，内存地址并没有发生变化</span></span><br><span class="line"><span class="comment"># localMovies调用extend()方法后是没有返回值的，即返回值为None，赋值给了movieList</span></span><br><span class="line">movieList = localMovies.extend(onlineMovies) </span><br><span class="line">print(moviesList)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<p>因为列表的这些方法是没有返回值的，如下图所示：</p>
+<p><img src="C:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221201210229424.png" alt="image-20221201210229424"></p>
+<p><img src="C:%5CUsers%5CCoderLeiShuo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20221201210108039.png" alt="image-20221201210108039"></p>
+<h2 id="insert-方法插入元素"><a href="#insert-方法插入元素" class="headerlink" title="insert()方法插入元素"></a>insert()方法插入元素</h2><p>append() 和 extend() 方法只能在列表末尾插入元素，如果希望在列表中间某个位置插入元素，那么可以使用 insert() 方法。</p>
+<p>insert() 的语法格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listname.insert(index , obj)</span><br></pre></td></tr></table></figure>
+
+<p>其中，<code>index</code> 表示指定位置的索引值。<code>insert()</code> 会将 <code>obj</code> 插入到 <code>listname</code> 列表第 <code>index</code> 个元素的位置。</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nums = [<span class="number">9</span>, <span class="number">2</span>, <span class="number">7</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在索引为1的位置插入元素5</span></span><br><span class="line">nums.insert(<span class="number">1</span>,<span class="number">5</span>)</span><br><span class="line">print(nums)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">9</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>]</span><br></pre></td></tr></table></figure>
+
+
+
+<p>当插入列表或者元祖时，insert() 也会将它们视为一个整体，作为一个元素插入到列表中，这一点和 append() 是一样的。</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nums = [<span class="number">9</span>, <span class="number">2</span>, <span class="number">7</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在索引为1的位置插入列表</span></span><br><span class="line">nums.insert(<span class="number">1</span>, [<span class="number">9</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>])</span><br><span class="line">print(nums)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">9</span>, [<span class="number">9</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>], <span class="number">5</span>, <span class="number">2</span>, <span class="number">7</span>]</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><h3 id="练习一：产生10个随机整数，保存在列表中并输出"><a href="#练习一：产生10个随机整数，保存在列表中并输出" class="headerlink" title="练习一：产生10个随机整数，保存在列表中并输出"></a>练习一：产生10个随机整数，保存在列表中并输出</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 产生10个随机数，将其保存在列表中</span></span><br><span class="line"><span class="comment"># 步骤：</span></span><br><span class="line"><span class="comment"># 1、如何产生随机数 random.randint(a,b)函数</span></span><br><span class="line"><span class="comment"># 2、如何产生10个，循环</span></span><br><span class="line"><span class="comment"># 3、将产生的10个随机数保存到列表中 list.append()方法等</span></span><br><span class="line"><span class="comment"># 4、打印列表</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入随机数模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个空列表用于存放随机数</span></span><br><span class="line">numList = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># 产生随机整数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    rndNum = random.randint(<span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 不能使用extend()方法，它不能用于添加单个数字</span></span><br><span class="line">    <span class="comment"># 使用append()方法</span></span><br><span class="line">    numList.append(rndNum)</span><br><span class="line">    <span class="comment"># 使用insert()方法</span></span><br><span class="line">    numList.insert(i, rndNum)</span><br><span class="line"></span><br><span class="line">print(numList)</span><br></pre></td></tr></table></figure>
+
+<h3 id="练习二：产生10个不同的随机整数，保存到列表中并输出"><a href="#练习二：产生10个不同的随机整数，保存到列表中并输出" class="headerlink" title="练习二：产生10个不同的随机整数，保存到列表中并输出"></a>练习二：产生10个不同的随机整数，保存到列表中并输出</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入随机数模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个空列表用于存放随机数</span></span><br><span class="line">numList = []</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    rndNum = random.randint(<span class="number">1</span>,<span class="number">10</span>)</span><br><span class="line">	</span><br><span class="line">    <span class="comment"># 判断生成的随机数是否在列表中已经存在</span></span><br><span class="line">    <span class="keyword">if</span> rndNum <span class="keyword">not</span> <span class="keyword">in</span> numList:</span><br><span class="line">        <span class="comment"># 不存在重复，则添加</span></span><br><span class="line">        numList.append(rndNum)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">print(numList)</span><br><span class="line"><span class="comment"># 取列表的最大值</span></span><br><span class="line">print(max(numList))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不能使用for in range()，因为它只能循环次数10次</span></span><br><span class="line"><span class="comment"># 然后循环10次后，产生的随机数不一定能符合if语句</span></span><br><span class="line"><span class="comment"># 因此可能出现循环结束后列表中的元素不足10个</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># for i in range(10): </span></span><br><span class="line"><span class="comment">#     rndNum = random.randint(1, 100)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#     if rndNum not in numList:</span></span><br><span class="line"><span class="comment">#         numList.append(rndNum)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print(numList)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值"><a href="#练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值" class="headerlink" title="练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值"></a>练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值</h3><p>使用Python内置的<code>max</code>函数可以返回列表中的最大值</p>
+<p>例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入随机数模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个空列表用于存放随机数</span></span><br><span class="line">numList = []</span><br><span class="line"></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    rndNum = random.randint(<span class="number">1</span>,<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> rndNum <span class="keyword">not</span> <span class="keyword">in</span> numList:</span><br><span class="line">        numList.append(rndNum)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">print(numList)</span><br><span class="line"><span class="comment"># 取列表的最大值</span></span><br><span class="line">print(max(numList))</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[10, 7, 2, 6, 4, 3, 5, 9, 8, 1]</span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+
+<p>除了使用Python提供的max函数外，我们也可以尝试自己手写代码实现这个操作。</p>
+<p>于是，经过动脑，你可能写出如下代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入随机数模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个空列表用于存放随机数</span></span><br><span class="line">numList = []</span><br><span class="line"></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="comment"># 假设一个最大值为0</span></span><br><span class="line">max = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    rndNum = random.randint(<span class="number">1</span>,<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> rndNum <span class="keyword">not</span> <span class="keyword">in</span> numList:</span><br><span class="line">        <span class="comment"># 如果新生成的随机数比max大，则将新随机数赋值给max</span></span><br><span class="line">        <span class="keyword">if</span> rndNum &gt; max:</span><br><span class="line">            max = rndNum</span><br><span class="line">        numList.append(rndNum)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">print(numList)</span><br><span class="line"><span class="comment"># 获取列表的最大值</span></span><br><span class="line">print(max(numList))</span><br><span class="line"><span class="comment"># 获取列表的最大值</span></span><br><span class="line">print(max)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">    print(max(numList))</span><br><span class="line">TypeError: <span class="string">'int'</span> object <span class="keyword">is</span> <span class="keyword">not</span> callable <span class="comment"># int类型是不可调用的</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果报错了。问题出在哪呢？出在我们在代码中使用了max函数，却又定义了一个变量名叫<code>max</code>，它是保留字，二者冲突了。当执行到max()时，Python发现你的<code>max</code>变量是个<code>int</code>类型，它怎么能作为方法被调用呢？</p>
+<p>所以，只需要修改一下变量名即可</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 导入随机数模块</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个空列表用于存放随机数</span></span><br><span class="line">numList = []</span><br><span class="line"></span><br><span class="line">i = <span class="number">0</span></span><br><span class="line">maxValue = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    rndNum = random.randint(<span class="number">1</span>,<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> rndNum <span class="keyword">not</span> <span class="keyword">in</span> numList:</span><br><span class="line">        <span class="keyword">if</span> rndNum &gt; maxValue:</span><br><span class="line">            maxValue = rndNum</span><br><span class="line">        numList.append(rndNum)</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">print(numList)</span><br><span class="line"><span class="comment"># 获取列表的最大值</span></span><br><span class="line">print(max(numList))</span><br><span class="line"><span class="comment"># 获取列表的最大值</span></span><br><span class="line">print(maxValue)</span><br></pre></td></tr></table></figure>
+
+
 
 
       
@@ -298,7 +344,7 @@
                   CoderLeiShuo
                 
                 <br>
-                <strong>本文链接：</strong><a href="">https://coderleishuo.github.io/lele/41197.html</a>
+                <strong>本文链接：</strong><a href="">https://coderleishuo.github.io/lele/65251.html</a>
                 <br>
                 <strong>版权声明：</strong>
                 本作品采用
@@ -359,7 +405,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
@@ -415,7 +461,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://coderleishuo.github.io/lele/41197.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://coderleishuo.github.io/lele/65251.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -429,18 +475,18 @@
   
 <nav id="article-nav">
   
-    <a href="/lele/42622.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/lele/61216.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          CSS中的相对值
+          03-Python列表删除列表和列表元素
         
       </div>
     </a>
   
   
-    <a href="/lele/20232.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS相对定位</div>
+    <a href="/lele/19235.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python列表</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -467,7 +513,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-从一个标题开始说起"><span class="toc-number">1.</span> <span class="toc-text">1 从一个标题开始说起</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-什么是margin合并"><span class="toc-number">2.</span> <span class="toc-text">2 什么是margin合并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-相邻兄弟元素的margin合并"><span class="toc-number">3.</span> <span class="toc-text">3 相邻兄弟元素的margin合并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-父元素和首尾子元素的margin合并"><span class="toc-number">4.</span> <span class="toc-text">4 父元素和首尾子元素的margin合并</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-父元素和第一个子元素的合并"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 父元素和第一个子元素的合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-父元素和最后一个子元素的合并"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 父元素和最后一个子元素的合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-取消合并"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 取消合并</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-空白块级元素的margin合并"><span class="toc-number">5.</span> <span class="toc-text">5 空白块级元素的margin合并</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#连接列表"><span class="toc-number">1.</span> <span class="toc-text">+ 连接列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#append-方法添加元素"><span class="toc-number">2.</span> <span class="toc-text">append()方法添加元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#extend-方法添加元素"><span class="toc-number">3.</span> <span class="toc-text">extend()方法添加元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#insert-方法插入元素"><span class="toc-number">4.</span> <span class="toc-text">insert()方法插入元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#练习"><span class="toc-number">5.</span> <span class="toc-text">练习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#练习一：产生10个随机整数，保存在列表中并输出"><span class="toc-number">5.1.</span> <span class="toc-text">练习一：产生10个随机整数，保存在列表中并输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#练习二：产生10个不同的随机整数，保存到列表中并输出"><span class="toc-number">5.2.</span> <span class="toc-text">练习二：产生10个不同的随机整数，保存到列表中并输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值"><span class="toc-number">5.3.</span> <span class="toc-text">练习三：产生10个不同的随机整数，保存到列表中并输出列表中的最大值</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -483,7 +529,7 @@
   
 
   
-  <div id="SOHUCS" sid="margin合并" ></div> 
+  <div id="SOHUCS" sid="02-Python列表添加元素" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
